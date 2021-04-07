@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Icons -->
+    
+      <link rel="shortcut icon" href="assets/img/kouper-breeze.svg">
+    
+
+    
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://cdn.kde.org/aether-devel/bootstrap.css?6-jekyll">
+    <link rel="stylesheet" href="https://cdn.kde.org/aether-devel/aether-kde-org.css?6-jekyll">
+
+    <link rel="stylesheet" href="/css/main.css?1617813609116016631">
+
+    <!-- Standard JS Files, bootstrap Async -->
+    <script src="https://cdn.kde.org/aether-devel/bootstrap.js?6-jekyll" defer=""></script>
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Androids Datenschutzeinstellungen optimieren und Android absichern | KaratekHD</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Androids Datenschutzeinstellungen optimieren und Android absichern" />
+<meta name="author" content="KaratekHD" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Android telefoniert in seinen Voreinstellungen doch recht viel nach Hause zu Google, dem Gerätehersteller und anderen Parteien. In diesem Artikel ist beschrieben, wie man diese “Phone-Home Funktionen” einschränken kann. Wie viel Google so überuns erfährt, zeigt dieses Zitat von Aufsichtsratchef Eric Schmidt:" />
+<meta property="og:description" content="Android telefoniert in seinen Voreinstellungen doch recht viel nach Hause zu Google, dem Gerätehersteller und anderen Parteien. In diesem Artikel ist beschrieben, wie man diese “Phone-Home Funktionen” einschränken kann. Wie viel Google so überuns erfährt, zeigt dieses Zitat von Aufsichtsratchef Eric Schmidt:" />
+<link rel="canonical" href="https://karatek.net/privacy/tutorial/security/2021/01/01/androids-datenschutz-optimieren.html" />
+<meta property="og:url" content="https://karatek.net/privacy/tutorial/security/2021/01/01/androids-datenschutz-optimieren.html" />
+<meta property="og:site_name" content="KaratekHD" />
+<meta property="og:image" content="https://karatek.net/img/android.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-01-01T16:57:17+01:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://karatek.net/img/android.png" />
+<meta property="twitter:title" content="Androids Datenschutzeinstellungen optimieren und Android absichern" />
+<script type="application/ld+json">
+{"author":{"@type":"Person","name":"KaratekHD"},"url":"https://karatek.net/privacy/tutorial/security/2021/01/01/androids-datenschutz-optimieren.html","description":"Android telefoniert in seinen Voreinstellungen doch recht viel nach Hause zu Google, dem Gerätehersteller und anderen Parteien. In diesem Artikel ist beschrieben, wie man diese “Phone-Home Funktionen” einschränken kann. Wie viel Google so überuns erfährt, zeigt dieses Zitat von Aufsichtsratchef Eric Schmidt:","@type":"BlogPosting","image":"https://karatek.net/img/android.png","headline":"Androids Datenschutzeinstellungen optimieren und Android absichern","dateModified":"2021-01-01T16:57:17+01:00","datePublished":"2021-01-01T16:57:17+01:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://karatek.net/privacy/tutorial/security/2021/01/01/androids-datenschutz-optimieren.html"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+
+
+    <body data-spy="scroll" data-target="#kHeaderCarousel" data-offset="50">
+
+    <header id="KGlobalHeader" class="header clearfix">
+  <nav class="navbar navbar-expand-lg ">
+    
+        <a class="app-logo navbar-brand active" href="/">
+            <img src="/assets/img/kouper-breeze.svg" alt="Logo" />
+        </a>
+    
+    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-kde" aria-controls="navbar-kde" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar-kde">
+      <ul class="navbar-nav mr-auto">
+        
+        <li class="nav-item">
+          <a class="nav-link"
+             href="/" aria-haspopup="true"
+             aria-expanded="false">
+            KaratekHD
+          </a>
+        </li>
+        
+        
+
+        
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle " href="#" id="navbardownload"
+               role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Download
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbardownload">
+              
+                <a class="dropdown-item" href="/Downloads">Overview</a>
+              
+                <a class="dropdown-item" href="/Downloads/Linux">Linux</a>
+              
+            </div>
+          </li>
+          
+        
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle " href="#" id="navbarprojects"
+               role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Projects
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarprojects">
+              
+                <a class="dropdown-item" href="/projects/tsbot">Teamspeak Bot</a>
+              
+                <a class="dropdown-item" href="/projects/opengm">OpenGM</a>
+              
+                <a class="dropdown-item" href="/projects/gutils">Gutilities</a>
+              
+            </div>
+          </li>
+          
+        
+          
+          
+          <li class="nav-item">
+              <a class="nav-link "
+                 
+                 href="/ts.html">Teamspeak</a>
+          </li>
+          
+        
+          
+          
+          <li class="nav-item">
+              <a class="nav-link "
+                 
+                 href="https://blog.karatek.net">Blog</a>
+          </li>
+          
+        
+      </ul>
+    </div>
+    
+    
+  </nav>
+</header>
+
+
+    <main class="container markdown-output">
+  <h1>Androids Datenschutzeinstellungen optimieren und Android absichern</h1>
+  <p><small>January 01, 2021</small></p>
+  <p>Android telefoniert in seinen Voreinstellungen doch recht viel nach Hause zu Google, dem Gerätehersteller und anderen Parteien. In diesem Artikel ist beschrieben, wie man diese “Phone-Home Funktionen” einschränken kann.
+Wie viel Google so überuns erfährt, zeigt dieses Zitat von Aufsichtsratchef Eric Schmidt:</p>
+
+<blockquote>
+  <p><i>With your permission you give us more information about you, about your friends, and we can improve the quality of our searches. We don’t need you to type at all. We know where you are. We know where you’ve been. We can more or less know what you’re thinking about.</i></p>
+</blockquote>
+
+<p>Es ist also an der Zeit, diesem Datensammeln den Stecker zu ziehen.</p>
+
+<h2 id="der-sanfte-weg">Der sanfte Weg</h2>
+<p>Beim “sanften Weg” werden keine Modifikationen am System vorgenommen. Alle Änderungen betreffen nur den jeweils angemeldeten Benutzer und lassen sich leicht wieder ändern. Allerdings gibt es bei dieser Methode immernoch Schlupflöcher, durch die das Gerät Daten abfließen lassen könnte.</p>
+
+<h3 id="google-einstellungen-anpassen">Google Einstellungen anpassen</h3>
+<p>Für die folgenden Einstellungen müssen Sie in die Einstellungen ihres Google Kontos navigieren. Gehen Sie hierzu unter Android 10 wie folgt vor:</p>
+
+<ol>
+  <li>Öffnen Sie ihre Geräte Einstellungen</li>
+  <li>Wählen Sie den Menüpunkt “Google” aus.</li>
+  <li>Wählen Sie dann “Google-Konto verwalten” aus.</li>
+  <li>Tippen Sie unter “Datenschutz &amp; Personalisierung” auf “Daten &amp; Personalisierung verwalten”.</li>
+</ol>
+
+<h4 id="aktivitäten-abschalten">Aktivitäten abschalten</h4>
+<p>Nun können Sie die eigentlichen Einstellungen ändern:</p>
+
+<ol>
+  <li>Deaktivieren Sie die “Web- &amp; App- Aktivitäten”, den “Standortverlauf” und den “YouTube-Verlauf”.</li>
+  <li>Deaktivieren Sie nun personenbezogene Werbung. Öffnen Sie dazu <a href="http://google.com/ads/preferences">http://google.com/ads/preferences</a>.</li>
+  <li>Entfernen Sie unter “Interessen” alle Häckchen</li>
+  <li>Scrollen Sie zu “Interessenbezogene Werbung” und deaktivieren Sie den Schalter.</li>
+</ol>
+
+<h4 id="ortungsfunktion-deaktivieren">Ortungsfunktion deaktivieren</h4>
+<p>Nun sollte noch die Ortungsfunktion deaktiviert werden:</p>
+
+<ol>
+  <li>Kehren Sie zurück zu den Google Einstellungen.</li>
+  <li>Wählen Sie den Menüpunkt “Sicherheit”.</li>
+  <li>Rufen Sie “Mein Gerät finden” auf.</li>
+  <li>Schalten Sie den Schalter aus.</li>
+</ol>
+
+<h3 id="synchronisierungseinstellungen-ändern">Synchronisierungseinstellungen ändern</h3>
+<h4 id="konten-synchronisierung-abschalten">Konten Synchronisierung abschalten</h4>
+<p>Im nächsten Schritt schalten wir die Synchronisierung aus:</p>
+
+<ol>
+  <li>Öffnen Sie die Android Systemeinstellungen.</li>
+  <li>Navigieren Sie zu “Konten”.</li>
+  <li>Tippen Sie auf den obersten Eintrag.</li>
+  <li>Deaktivieren Sie alle nicht benötigten Einträge</li>
+  <li>Wiederholen Sie Schritt 3 &amp; 4, bis Sie alle Konten abgearbeitet haben.</li>
+</ol>
+
+<h4 id="google-drive-sicherungen-abschalten">Google Drive Sicherungen abschalten</h4>
+<p>Nun muss noch die Sicherungsfunktion dran glauben:</p>
+
+<ol>
+  <li>Navigieren Sie aus den Android Einstellungen zu System -&gt; Sicherung</li>
+  <li>Deaktivieren Sie “In Google Drive sichern”.</li>
+</ol>
+
+<h4 id="google-play-protect-deaktivieren">Google Play Protect deaktivieren</h4>
+<p>Um zu verhindern, dass all unsere Apps zu Google hochgeladen werden, führen wir noch diese Schritte aus:</p>
+
+<ol>
+  <li>Navigieren Sie aus den Android Systemeinstellungen zu “Sicherheit” und tippen Sie auf “Google Play Protect”.</li>
+  <li>Deaktivieren Sie sämtliche angezeigten Funktionen.</li>
+</ol>
+
+<h3 id="nicht-benötigte-apps-entfernen">Nicht benötigte Apps entfernen</h3>
+<p>Als nächstes sollten Sie alle Apps, die Sie nicht benutzen (wollen), entfernen.</p>
+
+<ol>
+  <li>Navigieren Sie aus den Einstellungen zu “Apps”.</li>
+  <li>Klicken Sie auf “Alle Apps anzeigen”.</li>
+  <li>Tippen Sie auf die Apps, die Sie nicht benötigen.</li>
+  <li>Klicken Sie auf “Deinstallieren” oder auf “Deaktivieren”.</li>
+</ol>
+
+<p>Wir empfehlen, alle Google Apps zu entfernen, mit Ausnahme der “Google Play Dienste” und des “Google Play Store”. Desweiteren stellen viele weitere häufig vorinstallierten Apps ein Risiko da, etwa</p>
+
+<ul>
+  <li>Facebook</li>
+  <li>WhatsApp</li>
+  <li>Microsoft Office</li>
+  <li>Samsung Health</li>
+  <li>Diese Liste könnte endlos weitergeführt werden…</li>
+</ul>
+
+<h3 id="sicherheitseinstellungen-scharfschalten">Sicherheitseinstellungen scharfschalten</h3>
+<h4 id="eine-displaysperre-einrichten">Eine Displaysperre einrichten</h4>
+<ol>
+  <li>Navigieren Sie zu “Einstellungen” -&gt; “Sicherheit”.</li>
+  <li>Wählen Sie “Displaysperre” aus.</li>
+  <li>Schalten Sie eine PIN oder ein Passwort ein</li>
+</ol>
+
+<h4 id="verschlüsslung-aktivieren">Verschlüsslung aktivieren</h4>
+<ol>
+  <li>Gehen Sie nun zu “Einstellungen” -&gt; “Sicherheit” -&gt; “Verschlüsslung und Anmeldedaten”.</li>
+  <li>Tippen Sie auf “Smartphone verschlüsseln” und folgen Sie den Anweisungen auf dem Bildschirm.</li>
+</ol>
+
+<h3 id="freie-alternativen-für-google-apps">Freie Alternativen für Google Apps</h3>
+<p>Für die meisten Google Apps gibt es freie Alternativen. Die meisten Apps dieser Art lassen sich aus dem freiem Appstore <a href="https://f-droid.org">F-Droid</a> installieren.</p>
+<h4 id="f-droid-installieren">F-Droid installieren</h4>
+<ol>
+  <li>Laden Sie F-Droid von <a href="https://f-droid.org/F-Droid.apk">hier</a> herunter.</li>
+  <li>Installieren Sie die APK Datei.</li>
+  <li>Öffnen Sie F-Droid.</li>
+  <li>Aktualisieren Sie die Paketquellen, indem Sie einmal von oben nach unten Wischen.</li>
+</ol>
+
+<h4 id="empfohlene-apps-installieren">Empfohlene Apps installieren</h4>
+<p>Wir empfehlen die folgenden Apps als Alternative zu unfreien Diensten:</p>
+
+<ul>
+  <li><a href="https://f-droid.org/packages/com.fsck.k9/">K-9 Mail</a> als Alternative zu GMail</li>
+  <li><a href="https://f-droid.org/de/packages/org.telegram.messenger/">Telegram</a> als WhatsApp Alternative</li>
+  <li><a href="https://f-droid.org/de/packages/ws.xsoh.etar/">Etar</a> als Kalender App</li>
+  <li><a href="https://f-droid.org/packages/org.gnu.icecat/">Firefox</a> als Alternative zu Google Chrome</li>
+  <li><a href="https://www.videolan.org/vlc/download-android.html">VLC</a> als Mediaplayer</li>
+  <li><a href="https://f-droid.org/packages/org.schabi.newpipe/">NewPipe</a> als Alternative zu YouTube</li>
+  <li><a href="/Projects/K-Music">K-Music beta</a> als Musik App</li>
+  <li><a href="https://f-droid.org/packages/net.osmand.plus/">OsmAnd</a> als Kartenapp
+*<a href="https://f-droid.org/de/packages/de.tobiasbielefeld.searchbar">SimpleSearch</a> als Alternative zu Google.</li>
+</ul>
+
+<h2 id="der-harte-weg">Der “harte Weg”</h2>
+<p>Beim harten Weg wird das Betriebssystem des Telefons verändert. Dies sollte nur von erfahrenen Nutzern durchgeführt werden!
+Wer mehr erfahren will, sollte sich das <a href="https://wiki.lineageos.org/">LineagesOS Wiki</a> ansehen.</p>
+
+<h2 id="weiterführende-informationen">Weiterführende Informationen</h2>
+<ul>
+  <li><a href="https://www.kuketz-blog.de/android-ohne-google-take-back-control-teil1/">Android ohne Google im Kuketz Blog</a></li>
+  <li><a href="https://fsfe.org/campaigns/android/liberate.de.html">Free your Android!</a></li>
+  <li><a href="https://www.heise.de/tipps-tricks/Android-ohne-Google-so-geht-s-4048927.html#google_aktivitaet_einschraenken">Google Datenschutzeinstellungen bei Heise</a></li>
+</ul>
+
+<script src="https://utteranc.es/client.js" repo="KaratekHD/Comments" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
+</script>
+
+
+</main>
+
+
+    <footer id="kFooter" class="footer">
+    
+
+    <section id="kLinks" class="container">
+        <div class="row">
+            
+                
+                    <nav class="col-sm">
+                        <h3>Legal</h3>
+                        
+                            <a href="/Legal/contact/">Contact</a>
+                        
+                            <a href="/Legal/privacy">Privacy</a>
+                        
+                            <a href="/Legal/privacy/de/">Datenschutz</a>
+                        
+                    </nav>
+                
+                    <nav class="col-sm">
+                        <h3>News &amp; Press</h3>
+                        
+                            <a href="https://blog.karatek.net">Blog</a>
+                        
+                            <a href="https://github.com/KaratekHD">GitHub</a>
+                        
+                    </nav>
+                
+            
+        </div>
+    </section>
+
+    <section id="kSocial" class="container kSocialLinks">
+        
+            <a class="shareTwitter" href="https://twitter.com/KaratekHD" rel="nofollow">Share on Twitter</a>
+            <a class="shareMastodon" href="https://mastodon.social/@KaratekHD" rel="me nofollow">Share on Mastodon</a>
+            <a class="shareReddit" href="https://www.reddit.com/u/KaratekHD/" rel="nofollow">Share on Reddit</a>
+        
+    </section>
+
+    <section id="kLegal" class="container">
+        <div class="row">
+            <small class="col-4">
+                Maintained by 
+                    <a href="mailto:kontakt@karatek.net">KaratekHD</a>
+                
+            </small>
+            <small class="col-8 text-right">
+                Copyright (C) 2021 KaratekHD.|
+                <a href="https://karatek.net/Legal/contact/">Legal</a>
+                
+            </small>
+        </div>
+    </section>
+</footer>
+
+
+
+
+    </body>
+</html>

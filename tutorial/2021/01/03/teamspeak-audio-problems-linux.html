@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Icons -->
+    
+      <link rel="shortcut icon" href="assets/img/kouper-breeze.svg">
+    
+
+    
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://cdn.kde.org/aether-devel/bootstrap.css?6-jekyll">
+    <link rel="stylesheet" href="https://cdn.kde.org/aether-devel/aether-kde-org.css?6-jekyll">
+
+    <link rel="stylesheet" href="/css/main.css?1617813609116016631">
+
+    <!-- Standard JS Files, bootstrap Async -->
+    <script src="https://cdn.kde.org/aether-devel/bootstrap.js?6-jekyll" defer=""></script>
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>How to fix the Teamspeak Audio mute problem on Linux | KaratekHD</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="How to fix the Teamspeak Audio mute problem on Linux" />
+<meta name="author" content="KaratekHD" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="In this article, I’m gonna show you how to fix tix the TeamSpeak Audio mute problem on Linux. It has been tested on my machine, you can see details below." />
+<meta property="og:description" content="In this article, I’m gonna show you how to fix tix the TeamSpeak Audio mute problem on Linux. It has been tested on my machine, you can see details below." />
+<link rel="canonical" href="https://karatek.net/tutorial/2021/01/03/teamspeak-audio-problems-linux.html" />
+<meta property="og:url" content="https://karatek.net/tutorial/2021/01/03/teamspeak-audio-problems-linux.html" />
+<meta property="og:site_name" content="KaratekHD" />
+<meta property="og:image" content="https://karatek.net/img/Screenshot_20210103_115210.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-01-03T16:57:17+01:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://karatek.net/img/Screenshot_20210103_115210.png" />
+<meta property="twitter:title" content="How to fix the Teamspeak Audio mute problem on Linux" />
+<script type="application/ld+json">
+{"author":{"@type":"Person","name":"KaratekHD"},"url":"https://karatek.net/tutorial/2021/01/03/teamspeak-audio-problems-linux.html","description":"In this article, I’m gonna show you how to fix tix the TeamSpeak Audio mute problem on Linux. It has been tested on my machine, you can see details below.","@type":"BlogPosting","image":"https://karatek.net/img/Screenshot_20210103_115210.png","headline":"How to fix the Teamspeak Audio mute problem on Linux","dateModified":"2021-01-03T16:57:17+01:00","datePublished":"2021-01-03T16:57:17+01:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://karatek.net/tutorial/2021/01/03/teamspeak-audio-problems-linux.html"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+
+
+    <body data-spy="scroll" data-target="#kHeaderCarousel" data-offset="50">
+
+    <header id="KGlobalHeader" class="header clearfix">
+  <nav class="navbar navbar-expand-lg ">
+    
+        <a class="app-logo navbar-brand active" href="/">
+            <img src="/assets/img/kouper-breeze.svg" alt="Logo" />
+        </a>
+    
+    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-kde" aria-controls="navbar-kde" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar-kde">
+      <ul class="navbar-nav mr-auto">
+        
+        <li class="nav-item">
+          <a class="nav-link"
+             href="/" aria-haspopup="true"
+             aria-expanded="false">
+            KaratekHD
+          </a>
+        </li>
+        
+        
+
+        
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle " href="#" id="navbardownload"
+               role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Download
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbardownload">
+              
+                <a class="dropdown-item" href="/Downloads">Overview</a>
+              
+                <a class="dropdown-item" href="/Downloads/Linux">Linux</a>
+              
+            </div>
+          </li>
+          
+        
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle " href="#" id="navbarprojects"
+               role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Projects
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarprojects">
+              
+                <a class="dropdown-item" href="/projects/tsbot">Teamspeak Bot</a>
+              
+                <a class="dropdown-item" href="/projects/opengm">OpenGM</a>
+              
+                <a class="dropdown-item" href="/projects/gutils">Gutilities</a>
+              
+            </div>
+          </li>
+          
+        
+          
+          
+          <li class="nav-item">
+              <a class="nav-link "
+                 
+                 href="/ts.html">Teamspeak</a>
+          </li>
+          
+        
+          
+          
+          <li class="nav-item">
+              <a class="nav-link "
+                 
+                 href="https://blog.karatek.net">Blog</a>
+          </li>
+          
+        
+      </ul>
+    </div>
+    
+    
+  </nav>
+</header>
+
+
+    <main class="container markdown-output">
+  <h1>How to fix the Teamspeak Audio mute problem on Linux</h1>
+  <p><small>January 03, 2021</small></p>
+  <p>In this article, I’m gonna show you how to fix tix the TeamSpeak Audio mute  problem on Linux. It has been tested on my machine, you can see details below.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Part</th>
+      <th style="text-align: left">Model</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Operating System</td>
+      <td style="text-align: left">OpenSUSE Tumbleweed</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Desktop Environment</td>
+      <td style="text-align: left">KDE Plasma 5.20.4</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Host</td>
+      <td style="text-align: left">X470 AORUS ULTRA GAMING</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Kernel</td>
+      <td style="text-align: left">5.10.1-1-default</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Window Manager</td>
+      <td style="text-align: left">KWin</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">CPU</td>
+      <td style="text-align: left">AMD Ryzen 5 2600 (12) @ 3.400GHz</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">GPU</td>
+      <td style="text-align: left">NVIDIA GeForce GTX 1060 6GB</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">PulseAudio Version</td>
+      <td style="text-align: left">14.0-rebootstrapped</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="the-problem">The problem</h2>
+<p>When using TeamSpeak on Linux, you may have experienced this issue: Starting TeamSpeak mutes certain applications, such as Spotify or VLC. This is pretty annoying, especially while gaming, since you constantly have to tab  out of your game, open the volume control applet and unmute  the application, only to see it getting muted later. This is not a solution, so let’s fix it.</p>
+<h2 id="the-fix">The fix</h2>
+<p>Fixing this is pretty straight forward (See the <a href="https://en.opensuse.org/SDB:Pulseaudio#Starting_some_applications_mutes_some_others">OpenSUSE Wiki</a>). All you have to  do is commenting out the line <code class="highlighter-rouge">load-module module-role-cork</code> in <code class="highlighter-rouge">/etc/pulse/default.pa</code>. If you know what you’re doing, cou can do this yourself, but I’ll give step-by-step instructions below.</p>
+
+<h3 id="using-kde-kate">Using KDE Kate</h3>
+<ol>
+  <li>Hit [Alt] + [Space].</li>
+  <li>Enter <code class="highlighter-rouge">kdesu kate /etc/pulse/default.pa</code> and hit [Enter].</li>
+  <li>Search for the line saying “load-module module-role-cork” (Hint: Use [Ctrl] + [F])</li>
+  <li>Put a <code class="highlighter-rouge">#</code> in front of it. It should look now look like the following:
+    <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">### Cork music/video streams when a phone stream is active</span>
+<span class="c"># load-module module-role-cork</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Save the file ([Ctrl] + [S]) and close the window.</li>
+  <li>Open krunner by pressing [Alt] + [Space] and type <code class="highlighter-rouge">pulseaudio -k &amp;&amp; pulseaudio --start</code> [Enter].</li>
+</ol>
+
+<h3 id="using-gnome-gedit">Using GNOME gedit:</h3>
+<ol>
+  <li>Open a terminal window.</li>
+  <li>Start a root session. On Ubuntu/Debian based systems, I recommend using <code class="highlighter-rouge">sudo bash</code>, on SUSE/RHEL based systems use <code class="highlighter-rouge">su -</code>. Enter the required password, if you are prompted to.</li>
+  <li>Edit the file <code class="highlighter-rouge">/etc/pulse/default.pa</code>. For doing so, type: <code class="highlighter-rouge">gedit /etc/pulse/default.pa</code></li>
+  <li>Search for the line saying “load-module module-role-cork”</li>
+  <li>Put a <code class="highlighter-rouge">#</code> in front of it. It should look now look like the following:
+    <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">### Cork music/video streams when a phone stream is active</span>
+<span class="c"># load-module module-role-cork</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Save the file ([Ctrl] + [S]) and close the window.</li>
+  <li>Exit the root session by typing <code class="highlighter-rouge">exit</code>.</li>
+  <li>Kill the PulseAudio Server: <code class="highlighter-rouge">pulseaudio -k</code></li>
+  <li>Start it again: <code class="highlighter-rouge">pulseaudio --start</code></li>
+</ol>
+
+<h3 id="using-the-terminal-universal-method">Using the terminal (universal method)</h3>
+<ol>
+  <li>Open a terminal window. On KDE Plasma, this is done by opening the Kickstarter Menu and searching for “Konsole”.</li>
+  <li>Start a root session. On Ubuntu/Debian based systems, I recommend using <code class="highlighter-rouge">sudo -s</code>, on SUSE/RHEL based systems use <code class="highlighter-rouge">su -</code>. Enter the required password, if you are prompted to.</li>
+  <li>Edit the file <code class="highlighter-rouge">/etc/pulse/default.pa</code>. For doing so, type: <code class="highlighter-rouge">vim /etc/pulse/default.pa</code></li>
+  <li>Search for the line saying “load-module module-role-cork”. For doing so, enter a <code class="highlighter-rouge">/</code>and the line afterwards, so <code class="highlighter-rouge">/load-module module-role-cork</code>. See <a href="https://vim.fandom.com/wiki/Searching">this wiki entry</a> for more help regarding searching in VIM.</li>
+  <li>Enter editing mode by hitting the key <code class="highlighter-rouge">i</code> on the keyboard. Now you will be able to edit the text file.</li>
+  <li>Now out comment the line by putting a <code class="highlighter-rouge">#</code> in front of it. It should now look like the following:
+    <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">### Cork music/video streams when a phone stream is active</span>
+<span class="c"># load-module module-role-cork</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Now hit escape in order to exit editing mode and type <code class="highlighter-rouge">:wq</code> and hit Enter. This will save the file and exit vim.</li>
+  <li>End the root session by using <code class="highlighter-rouge">exit</code>.</li>
+  <li>Kill the PulseAudio Server: <code class="highlighter-rouge">pulseaudio -k</code></li>
+  <li>Start it again: <code class="highlighter-rouge">pulseaudio --start</code></li>
+</ol>
+
+<h2 id="sources">Sources</h2>
+<ul>
+  <li><a href="https://community.teamspeak.com/t/solved-teamspeak-interrupts-sound-output-from-spotify/5634">TeamSpeak Forum</a></li>
+  <li><a href="https://en.opensuse.org/SDB:Pulseaudio#Starting_some_applications_mutes_some_others">Fix in OpenSUSE Wiki</a></li>
+  <li><a href="https://wiki.archlinux.org/index.php/PulseAudio/Troubleshooting#Starting_an_application_interrupts_other_app's_sound">Arch Wiki</a></li>
+</ul>
+
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+  <li><a href="https://www.vim.org/docs.php">Vim Documentation</a></li>
+  <li><a href="https://wiki.gentoo.org/wiki/Vim/Guide">Vim Guide in Gentoo Wiki</a></li>
+  <li><a href="https://en.opensuse.org/SDB:Pulseaudio">PulseAudio in OpenSUSE  Wiki</a></li>
+</ul>
+
+<hr />
+
+<script src="https://utteranc.es/client.js" repo="KaratekHD/Comments" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
+</script>
+
+
+</main>
+
+
+    <footer id="kFooter" class="footer">
+    
+
+    <section id="kLinks" class="container">
+        <div class="row">
+            
+                
+                    <nav class="col-sm">
+                        <h3>Legal</h3>
+                        
+                            <a href="/Legal/contact/">Contact</a>
+                        
+                            <a href="/Legal/privacy">Privacy</a>
+                        
+                            <a href="/Legal/privacy/de/">Datenschutz</a>
+                        
+                    </nav>
+                
+                    <nav class="col-sm">
+                        <h3>News &amp; Press</h3>
+                        
+                            <a href="https://blog.karatek.net">Blog</a>
+                        
+                            <a href="https://github.com/KaratekHD">GitHub</a>
+                        
+                    </nav>
+                
+            
+        </div>
+    </section>
+
+    <section id="kSocial" class="container kSocialLinks">
+        
+            <a class="shareTwitter" href="https://twitter.com/KaratekHD" rel="nofollow">Share on Twitter</a>
+            <a class="shareMastodon" href="https://mastodon.social/@KaratekHD" rel="me nofollow">Share on Mastodon</a>
+            <a class="shareReddit" href="https://www.reddit.com/u/KaratekHD/" rel="nofollow">Share on Reddit</a>
+        
+    </section>
+
+    <section id="kLegal" class="container">
+        <div class="row">
+            <small class="col-4">
+                Maintained by 
+                    <a href="mailto:kontakt@karatek.net">KaratekHD</a>
+                
+            </small>
+            <small class="col-8 text-right">
+                Copyright (C) 2021 KaratekHD.|
+                <a href="https://karatek.net/Legal/contact/">Legal</a>
+                
+            </small>
+        </div>
+    </section>
+</footer>
+
+
+
+
+    </body>
+</html>
