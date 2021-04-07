@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Icons -->
+    
+      <link rel="shortcut icon" href="assets/img/kouper-breeze.svg">
+    
+
+    
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://cdn.kde.org/aether-devel/bootstrap.css?6-jekyll">
+    <link rel="stylesheet" href="https://cdn.kde.org/aether-devel/aether-kde-org.css?6-jekyll">
+
+    <link rel="stylesheet" href="/css/main.css?1617813872033795047">
+
+    <!-- Standard JS Files, bootstrap Async -->
+    <script src="https://cdn.kde.org/aether-devel/bootstrap.js?6-jekyll" defer=""></script>
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Download Packages for GNU/Linux based Operating Systems | KaratekHD</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Download Packages for GNU/Linux based Operating Systems" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Personal website of KaratekHD" />
+<meta property="og:description" content="Personal website of KaratekHD" />
+<link rel="canonical" href="https://karatek.net/Downloads/Linux/" />
+<meta property="og:url" content="https://karatek.net/Downloads/Linux/" />
+<meta property="og:site_name" content="KaratekHD" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Download Packages for GNU/Linux based Operating Systems" />
+<script type="application/ld+json">
+{"url":"https://karatek.net/Downloads/Linux/","description":"Personal website of KaratekHD","@type":"WebPage","headline":"Download Packages for GNU/Linux based Operating Systems","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+
+
+    <body data-spy="scroll" data-target="#kHeaderCarousel" data-offset="50">
+
+    <header id="KGlobalHeader" class="header clearfix">
+  <nav class="navbar navbar-expand-lg ">
+    
+        <a class="app-logo navbar-brand active" href="/">
+            <img src="/assets/img/kouper-breeze.svg" alt="Logo" />
+        </a>
+    
+    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-kde" aria-controls="navbar-kde" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar-kde">
+      <ul class="navbar-nav mr-auto">
+        
+        <li class="nav-item">
+          <a class="nav-link"
+             href="/" aria-haspopup="true"
+             aria-expanded="false">
+            KaratekHD
+          </a>
+        </li>
+        
+        
+
+        
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle " href="#" id="navbardownload"
+               role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Download
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbardownload">
+              
+                <a class="dropdown-item" href="/Downloads">Overview</a>
+              
+                <a class="dropdown-item" href="/Downloads/Linux">Linux</a>
+              
+            </div>
+          </li>
+          
+        
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle " href="#" id="navbarprojects"
+               role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Projects
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarprojects">
+              
+                <a class="dropdown-item" href="/projects/tsbot">Teamspeak Bot</a>
+              
+                <a class="dropdown-item" href="/projects/opengm">OpenGM</a>
+              
+                <a class="dropdown-item" href="/projects/gutils">Gutilities</a>
+              
+            </div>
+          </li>
+          
+        
+          
+          
+          <li class="nav-item">
+              <a class="nav-link "
+                 
+                 href="/ts.html">Teamspeak</a>
+          </li>
+          
+        
+          
+          
+          <li class="nav-item">
+              <a class="nav-link "
+                 
+                 href="https://blog.karatek.net">Blog</a>
+          </li>
+          
+        
+      </ul>
+    </div>
+    
+    
+  </nav>
+</header>
+
+
+    <main class="navfix container" aria-label="Content">
+
+
+
+    <link rel="shortcut icon" href="http://localhost:4000/assets/img/kouper-breeze.svg" />
+
+<h1 id="download-packages-for-gnulinux-based-operating-systems">Download Packages for GNU/Linux based Operating Systems</h1>
+<hr />
+<p>You can install most of our software with the package manager of your distribution.</p>
+
+<h2 id="debian">Debian</h2>
+<p><strong>Package manager installs are only supported on the x64 architecture.</strong> This guide describes how to use a package manager to install various Karatek Software (and some other cool stuff) on Debian.
+We offer packages for the latest version of Debian testing.</p>
+<h3 id="cournel">Cournel</h3>
+<p>Installing our repositorys on Debain Cournel is really easy. 
+First of all, <a href="https://vitux.com/four-ways-to-open-the-terminal-in-debian/">open a terminal</a> and make sure that you are logged in as root:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo -s
+</code></pre></div></div>
+<p>Next step is importing our key into APT:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget -q -O - http://download.karatek.net/repo/KEY.gpg | apt-key add -
+</code></pre></div></div>
+<p>Then you can add the repositorys to APT.
+For propritary software (non-free):</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>echo "deb https://download.karatek.net/repo/debian/non-free/cournel/ /" &gt; /etc/apt/sources.list.d/karatek-non-free.list
+</code></pre></div></div>
+
+<p>After that, update your package list:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt update
+</code></pre></div></div>
+
+<p>And that’s it! You should now be able to install some software, throgh Synaptic (recommended), Gnome-Software or using <code class="highlighter-rouge">apt-get install &lt;package&gt;</code>.</p>
+
+<p>As a small example, we are gonna give you instructions about how to install Teamspeak3, contained in the non-free repository:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install teamspeak3
+</code></pre></div></div>
+<h2 id="ubuntu">Ubuntu</h2>
+<p><strong>Package manager installs are only supported on the x64 architecture.</strong> This guide describes how to use a package manager to install various Karatek Software (and some other cool stuff) on Ubuntu.</p>
+
+<p><strong>Warning: Never ever</strong> use a repository for another version of your distribution! If you don’t know what version of Ubuntu you are using, fire up a terminal and run <code class="highlighter-rouge">lsb_release -d</code></p>
+<h3 id="ubuntu-1910-eoan-ermine">Ubuntu 19.10 “Eoan Ermine”</h3>
+<p>Installing our repositorys on Ubuntu 19.10 is really easy. 
+First of all, <a href="https://ubuntu.com/tutorials/command-line-for-beginners#3-opening-a-terminal">open a terminal</a> and make sure that you are logged in as root:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo -s
+</code></pre></div></div>
+<p>Next step is importing our key into APT:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget -q -O - http://download.karatek.net/repo/KEY.gpg | apt-key add -
+</code></pre></div></div>
+<p>Then you can add the repositorys to APT:</p>
+
+<p>For Open Source Software (OSS):</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>echo "deb https://download.karatek.net/repo/ubuntu/oss/eoan/ /" &gt; /etc/apt/sources.list.d/karatek-oss.list
+</code></pre></div></div>
+<p>For propritary software (non-free):</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>echo "deb https://download.karatek.net/repo/ubuntu/non-free/eoan/ /" &gt; /etc/apt/sources.list.d/karatek-non-free.list
+</code></pre></div></div>
+
+<p>After that, update your package list:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt update
+</code></pre></div></div>
+<p>And that’s it! You should now be able to install some software, throgh Synaptic (recommended), Gnome/Ubuntu-Software Center or using <code class="highlighter-rouge">apt-get install &lt;package&gt;</code>.</p>
+
+<p>As a small example, we are gonna give you instructions about how to install Teamspeak3, contained in the non-free repository:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install teamspeak3
+</code></pre></div></div>
+
+<h3 id="ubuntu-1804-lts-bionic-beaver">Ubuntu 18.04 LTS “Bionic Beaver”</h3>
+<p>Installing our repositorys on Ubuntu 18.04 is really easy.
+First of all, <a href="https://ubuntu.com/tutorials/command-line-for-beginners#3-opening-a-terminal">open a terminal</a> and make sure that you are logged in as root:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo -s
+</code></pre></div></div>
+<p>Next step is importing our key into APT:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget -q -O - http://download.karatek.net/repo/KEY.gpg | apt-key add -
+</code></pre></div></div>
+<p>Then you can add the repositorys to APT:</p>
+
+<p>For Open Source Software (OSS):</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>echo "deb https://download.karatek.net/repo/ubuntu/oss/bionic/ /" &gt; /etc/apt/sources.list.d/karatek-oss.list
+</code></pre></div></div>
+<p>For propritary software (non-free):</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>echo "deb https://download.karatek.net/repo/ubuntu/non-free/bionic/ /" &gt; /etc/apt/sources.list.d/karatek-non-free.list
+</code></pre></div></div>
+
+<p>After that, update your package list:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt update
+</code></pre></div></div>
+<p>And that’s it! You should now be able to install some software, throgh Synaptic (recommended), Gnome/Ubuntu-Software Center or using <code class="highlighter-rouge">apt-get install &lt;package&gt;</code>.</p>
+
+<p>As a small example, we are gonna give you instructions about how to install Teamspeak3, contained in the non-free repository:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install teamspeak3
+</code></pre></div></div>
+
+<p><br />
+<br />
+<script src="https://utteranc.es/client.js" repo="KaratekHD/KaratekHD" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
+</script></p>
+
+
+</main>
+
+
+    <footer id="kFooter" class="footer">
+    
+
+    <section id="kLinks" class="container">
+        <div class="row">
+            
+                
+                    <nav class="col-sm">
+                        <h3>Legal</h3>
+                        
+                            <a href="/Legal/contact/">Contact</a>
+                        
+                            <a href="/Legal/privacy">Privacy</a>
+                        
+                            <a href="/Legal/privacy/de/">Datenschutz</a>
+                        
+                    </nav>
+                
+                    <nav class="col-sm">
+                        <h3>News &amp; Press</h3>
+                        
+                            <a href="https://blog.karatek.net">Blog</a>
+                        
+                            <a href="https://github.com/KaratekHD">GitHub</a>
+                        
+                    </nav>
+                
+            
+        </div>
+    </section>
+
+    <section id="kSocial" class="container kSocialLinks">
+        
+            <a class="shareTwitter" href="https://twitter.com/KaratekHD" rel="nofollow">Share on Twitter</a>
+            <a class="shareMastodon" href="https://mastodon.social/@KaratekHD" rel="me nofollow">Share on Mastodon</a>
+            <a class="shareReddit" href="https://www.reddit.com/u/KaratekHD/" rel="nofollow">Share on Reddit</a>
+        
+    </section>
+
+    <section id="kLegal" class="container">
+        <div class="row">
+            <small class="col-4">
+                Maintained by 
+                    <a href="mailto:kontakt@karatek.net">KaratekHD</a>
+                
+            </small>
+            <small class="col-8 text-right">
+                Copyright (C) 2021 KaratekHD.|
+                <a href="https://karatek.net/Legal/contact/">Legal</a>
+                
+            </small>
+        </div>
+    </section>
+</footer>
+
+
+
+
+    </body>
+</html>
